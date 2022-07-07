@@ -37,15 +37,11 @@ imap ( ()<LEFT>
 """"""""""""""""""""""""""""""
 
 "NERDTree
-nnoremap <silent> <C-e> :NERDTreeToggle<CR>
+map <silent> <C-e> :NERDTreeToggle<CR>
+let g:NERDTreeDirArrowExpandable = '▸'
+let g:NERDTreeDirArrowCollapsible = '▾'
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
-" 引数なしでvimを開くとNERDTreeを起動
-let file_name = expand('%')
-if has('vim_starting') &&  file_name == ''
-  autocmd VimEnter * NERDTree ./
-endif
-"Vimでgitのログをきれいに表示する - derisの日記
-"  http://deris.hatenablog.jp/entry/2013/05/10/003430
-" source ~/dotfiles/.vimrc.gitlogviewer
 set noundofile
 set nobackup
