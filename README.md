@@ -14,4 +14,4 @@
 - dotfile
   - $HOMEへ置く
   - vimを開いて`:PlugInstall`する
-  - (できない)vim-plugじゃない場合は[こちら](https://ubunlog.com/ja/vim-plug-un-administrador-de-complementos-de-vim/)を参照
+  - (↑できないなら)vim-plugじゃない場合は[こちら](https://ubunlog.com/ja/vim-plug-un-administrador-de-complementos-de-vim/)を参照
