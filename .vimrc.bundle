@@ -75,9 +75,6 @@ if has('vim_starting')
   " <C-a>でtrue/false切替。他色々
   Plug 'taku-o/vim-toggle'
 
-" }}}
-
-" Completion {{{
   " 補完 autocomplpop.vim : insertmodeで自動で補完をpopup
   " Plug 'AutoComplPop'
 
@@ -96,33 +93,31 @@ if has('vim_starting')
 
   " A neocomplcache plugin for English, using look command
   " Plug 'ujihisa/neco-look'
-" }}}
 
-" Searching/Moving{{{
   " smooth_scroll.vim : スクロールを賢く
   " Plug 'Smooth-Scroll'
   Plug 'yuroyoro/smooth_scroll.vim'
 
   " vim-smartword : 単語移動がスマートな感じで
-  "Plug 'smartword'
+  " Plug 'smartword'
 
   " camelcasemotion : CamelCaseやsnake_case単位でのワード移動
-  "Plug 'camelcasemotion'
+  " Plug 'camelcasemotion'
 
   " <Leader><Leader>w/fなどで、motion先をhilightする
-  "Plug 'EasyMotion'
+  " Plug 'EasyMotion'
 
   " matchit.vim : 「%」による対応括弧へのカーソル移動機能を拡張
-  "Plug 'matchit.zip'
+  " Plug 'matchit.zip'
 
   " ruby用のmatchit拡張
-  "Plug 'ruby-matchit'
+  " Plug 'ruby-matchit'
 
   " grep.vim : 外部のgrep利用。:Grepで対話形式でgrep :Rgrepは再帰
-  "Plug 'grep.vim'
+  " Plug 'grep.vim'
 
   " eregex.vim : vimの正規表現をrubyやperlの正規表現な入力でできる :%S/perlregex/
-  "Plug 'eregex.vim'
+  " Plug 'eregex.vim'
 
   " open-browser.vim : カーソルの下のURLを開くor単語を検索エンジンで検索
   Plug 'tyru/open-browser.vim'
@@ -130,9 +125,7 @@ if has('vim_starting')
   " VimからThe Silver Searcherを利用する
   "  http://blog.glidenote.com/blog/2013/02/28/the-silver-searcher-better-than-ack/
   Plug 'rking/ag.vim'
-" }}}
 
-" Programming {{{
   " quickrun.vim : 編集中のファイルを簡単に実行できるプラグイン
   Plug 'thinca/vim-quickrun'
 
@@ -140,7 +133,7 @@ if has('vim_starting')
   Plug 'thinca/vim-ref'
 
   " SQLUtilities : SQL整形、生成ユーティリティ
-  "Plug 'SQLUtilities'
+  " Plug 'SQLUtilities'
 
   " vim-ruby : VimでRubyを扱う際の最も基本的な拡張機能
   Plug 'vim-ruby/vim-ruby'
@@ -152,13 +145,13 @@ if has('vim_starting')
   Plug 'tpope/vim-rails'
 
   " Pydiction : Python用の入力補完
-  "Plug 'Pydiction'
+  " Plug 'Pydiction'
 
   " ソースコード上のメソッド宣言、変数宣言の一覧を表示
-  "Plug 'taglist.vim'
+  " Plug 'taglist.vim'
 
   " エラーがある場所をhilight
-  "Plug 'errormarker.vim'
+  " Plug 'errormarker.vim'
 
   " tagsを利用したソースコード閲覧・移動補助機能 tagsファイルの自動生成
   " Plug 'Source-Explorer-srcexpl.vim'
@@ -166,9 +159,6 @@ if has('vim_starting')
   " NERD_tree, taglist, srcexpl の統合
   " Plug 'trinity.vim'
 
-" }}}
-"
-" Syntax {{{
   " haml
   "Plug 'haml.zip'
 
@@ -207,9 +197,7 @@ if has('vim_starting')
 
   " syntax checking plugins exist for eruby, haml, html, javascript, php, python, ruby and sass.
   Plug 'scrooloose/syntastic'
-" }}}
 
-" Buffer {{{
   " DumbBuf.vim : quickbufっぽくbufferを管理。 "<Leader>b<Space>でBufferList
   "Plug 'DumbBuf'
 
@@ -220,16 +208,17 @@ if has('vim_starting')
   "Plug 'The-NERD-tree'
   Plug 'scrooloose/nerdtree'
 
+  " statusバー, tab
+  Plug 'vim-airline/vim-airline'
+  Plug 'vim-airline/vim-airline-themes'
+
+  " ファイルicon
+  Plug 'ryanoasis/vim-devicons'
+
   " vtreeexplorer.vim : ツリー状にファイルやディレクトリの一覧を表示
   "Plug 'vtreeexplorer'
-" }}}
 
-
-" Encording {{{
   Plug 'banyan/recognize_charcode.vim'
-" }}}
-
-" Utility {{{
 
   " vim-altercmd : Ex command拡張
   Plug 'tyru/vim-altercmd'
@@ -282,18 +271,12 @@ if has('vim_starting')
   " git-vim: Plugin files for calling git functions from inside Vim and Syntax files for git displays
   Plug 'motemen/git-vim'
 
-  "vim powerline"
-" }}}
-
-" ColorSchema{{{{
   " color schema 256
   "Plug 'desert256.vim'
   "Plug 'mrkn256.vim'
   Plug 'tomasr/molokai'
   Plug 'yuroyoro/yuroyoro256.vim'
-" }}}
 
-" Unite {{{{
   " unite.vim : - すべてを破壊し、すべてを繋げ - vim scriptで実装されたanythingプラグイン
   Plug 'Shougo/unite.vim'
   Plug 'tsukkee/unite-help'
@@ -304,9 +287,7 @@ if has('vim_starting')
   Plug 'tsukkee/unite-tag'
   Plug 'choplin/unite-vim_hacks'
 
-" }}}
-"
-" Plug 'gmarik/vundle'"
+  " Plug 'gmarik/vundle'"
 
   call plug#end()
 endif
