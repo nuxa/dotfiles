@@ -27,21 +27,3 @@ source ~/dotfiles/.vimrc.colors
 "source ~/dotfiles/.vimrc.misc
 "プラグインに依存するアレ
 "source ~/dotfiles/.vimrc.plugins_setting
-
-""""""""""""""""""""""""""""""
-" 自動的に閉じ括弧を入力
-""""""""""""""""""""""""""""""
-imap { {}<LEFT>
-imap [ []<LEFT>
-imap ( ()<LEFT>
-""""""""""""""""""""""""""""""
-
-"NERDTree
-map <silent> <C-e> :NERDTreeToggle<CR>
-let g:NERDTreeDirArrowExpandable = '▸'
-let g:NERDTreeDirArrowCollapsible = '▾'
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-
-set noundofile
-set nobackup

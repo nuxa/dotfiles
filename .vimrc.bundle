@@ -14,12 +14,6 @@ if has('vim_starting')
   " visually indent guide
   Plug 'nathanaelkane/vim-indent-guides'
 
-  " vimを立ち上げたときに、自動的にvim-indent-guidesをオンにする
-  "let g:indent_guides_enable_on_vim_startup = 1
-  "set ts=4 sw=4 et
-  "let g:indent_guides_start_level = 2
-  "let g:indent_guides_guide_size = 1
-
   " XMLとかHTMLとかの編集機能を強化する
   "Plug 'xmledit'
 
@@ -202,7 +196,8 @@ if has('vim_starting')
   "Plug 'DumbBuf'
 
   " minibufexpl.vim : タブエディタ風にバッファ管理ウィンドウを表示
-  "Plug 'minibufexpl.vim'
+  "Plug 'fholgado/minibufexpl.vim'
+  "Plug 'b4b4r07/vim-buftabs'
 
   " NERDTree : ツリー型エクスプローラ
   "Plug 'The-NERD-tree'

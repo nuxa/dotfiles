@@ -40,19 +40,19 @@ let Grep_Skip_Files = '*.bak *~'
 " Thanks to @osyo_mem http://ideone.com/rgVoyf
 "
 function! s:keeppatterns(cmd)
-	let old = @/
-	try
-		execute a:cmd
-		call histdel("/", -1)
-	catch
-		echohl ErrorMsg
-		echo v:exception
-		echohl NONE
-	finally
-		let @/ = old
-	endtry
+  let old = @/
+  try
+    execute a:cmd
+    call histdel("/", -1)
+  catch
+    echohl ErrorMsg
+    echo v:exception
+    echohl NONE
+  finally
+    let @/ = old
+  endtry
 endfunction
 
 command! -complete=command -nargs=*
-\	Keeppatterns
-\	call s:keeppatterns(<q-args>)
+\  Keeppatterns
+\  call s:keeppatterns(<q-args>)
